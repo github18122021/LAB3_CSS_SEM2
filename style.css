@@ -1,0 +1,97 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+/* body content */
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rampart One', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p:has(> a) {
+    text-align: center;
+}
+
+/* Layout & Appearance */
+
+header {
+    height: 15vw;
+    background-color: #FF8360;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em; /* Added margin-bottom */
+}
+
+.main-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #999;
+    padding: 1em;
+}
+
+/* section */
+main section {
+    display: flex;   /* display flex of both sections */
+}
+
+main section>div+p {
+    background-color: #3CDBD3;
+    padding: 1em;
+}
+
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;
+    margin: 0.5em; /* Added margin */
+}
+
+/* footer */
+footer {
+    display: flex;  
+    flex-direction: row-reverse;  /* reversing flex-direction */
+    margin-top: 0.5em;
+}
+
+footer p,
+footer a {
+    background-color: #7DCE82;
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+}
+
+footer p {
+    text-align: center;
+    flex-grow: 1; /* take extra space if possible */
+}
+
+footer a {
+    background-color: #FF8360;
+}
+
+footer a:hover {
+    background-color: #9C528B;
+}
